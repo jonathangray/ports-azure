@@ -2,7 +2,7 @@
 
 COMMENT=	AutoRest: Python Client Runtime - Azure Module
 
-MODPY_EGG_VERSION=	0.4.5
+MODPY_EGG_VERSION=	0.4.6
 DISTNAME=		msrestazure-${MODPY_EGG_VERSION}
 PKGNAME=		py-msrestazure-${MODPY_EGG_VERSION}
 EXTRACT_SUFX=		.zip
