@@ -2,7 +2,7 @@
 
 COMMENT=	Azure Container Registry Client Library
 
-MODPY_EGG_VERSION=	0.1.0
+MODPY_EGG_VERSION=	0.1.1
 DISTNAME=		azure-mgmt-containerregistry-${MODPY_EGG_VERSION}
 PKGNAME=		py-azure-mgmt-containerregistry-${MODPY_EGG_VERSION}
 EXTRACT_SUFX=		.zip
