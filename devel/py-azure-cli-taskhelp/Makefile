@@ -2,7 +2,7 @@
 
 COMMENT=	Azure Command-Line Tools Taskhelp Command Module
 
-MODPY_EGG_VERSION=	0.1.0b10
+MODPY_EGG_VERSION=	0.1.0b11
 DISTNAME=		azure-cli-taskhelp-${MODPY_EGG_VERSION}
 PKGNAME=		py-azure-cli-taskhelp-${MODPY_EGG_VERSION}
 

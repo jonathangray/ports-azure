@@ -2,7 +2,7 @@
 
 COMMENT=	Azure Command-Line Tools Core Module
 
-MODPY_EGG_VERSION=	0.1.0b10
+MODPY_EGG_VERSION=	0.1.0b11
 DISTNAME=		azure-cli-core-${MODPY_EGG_VERSION}
 PKGNAME=		py-azure-cli-core-${MODPY_EGG_VERSION}
 

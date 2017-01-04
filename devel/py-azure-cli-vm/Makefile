@@ -2,7 +2,7 @@
 
 COMMENT=	Azure Command-Line Tools VM Command Module
 
-MODPY_EGG_VERSION=	0.1.0b10
+MODPY_EGG_VERSION=	0.1.0b11
 DISTNAME=		azure-cli-vm-${MODPY_EGG_VERSION}
 PKGNAME=		py-azure-cli-vm-${MODPY_EGG_VERSION}
 

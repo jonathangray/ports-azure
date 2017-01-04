@@ -2,15 +2,8 @@
 bin/az
 bin/az.bat
 bin/az.completion.sh
-lib/python${MODPY_VERSION}/site-packages/azure/
-lib/python${MODPY_VERSION}/site-packages/azure/cli/
-lib/python${MODPY_VERSION}/site-packages/azure/cli/__init__.py
-lib/python${MODPY_VERSION}/site-packages/azure/cli/__init__.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/cli/__main__.py
 lib/python${MODPY_VERSION}/site-packages/azure/cli/__main__.pyc
-lib/python${MODPY_VERSION}/site-packages/azure/cli/command_modules/
-lib/python${MODPY_VERSION}/site-packages/azure/cli/command_modules/__init__.py
-lib/python${MODPY_VERSION}/site-packages/azure/cli/command_modules/__init__.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/cli/main.py
 lib/python${MODPY_VERSION}/site-packages/azure/cli/main.pyc
 lib/python${MODPY_VERSION}/site-packages/azure_cli-${MODPY_EGG_VERSION}-py${MODPY_VERSION}-nspkg.pth

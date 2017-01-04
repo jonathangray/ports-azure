@@ -2,7 +2,7 @@
 
 COMMENT=	Azure Command-Line Tools Network Command Module
 
-MODPY_EGG_VERSION=	0.1.0b10
+MODPY_EGG_VERSION=	0.1.0b11
 DISTNAME=		azure-cli-network-${MODPY_EGG_VERSION}
 PKGNAME=		py-azure-cli-network-${MODPY_EGG_VERSION}
 

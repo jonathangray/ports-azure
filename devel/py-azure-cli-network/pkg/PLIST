@@ -7,6 +7,8 @@ lib/python${MODPY_VERSION}/site-packages/azure/cli/command_modules/network/__ini
 lib/python${MODPY_VERSION}/site-packages/azure/cli/command_modules/network/__init__.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/cli/command_modules/network/_client_factory.py
 lib/python${MODPY_VERSION}/site-packages/azure/cli/command_modules/network/_client_factory.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/cli/command_modules/network/_format.py
+lib/python${MODPY_VERSION}/site-packages/azure/cli/command_modules/network/_format.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/cli/command_modules/network/_help.py
 lib/python${MODPY_VERSION}/site-packages/azure/cli/command_modules/network/_help.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/cli/command_modules/network/_params.py

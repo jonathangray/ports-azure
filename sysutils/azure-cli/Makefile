@@ -2,7 +2,7 @@
 
 COMMENT=	command line interface for Azure
 
-MODPY_EGG_VERSION=	0.1.0b10
+MODPY_EGG_VERSION=	0.1.0b11
 DISTNAME=		azure-cli-${MODPY_EGG_VERSION}
 
 HOMEPAGE=		https://github.com/Azure/azure-cli
@@ -28,6 +28,7 @@ RUN_DEPENDS=		devel/py-azure-cli-core>=${MODPY_EGG_VERSION} \
 			devel/py-azure-cli-context \
 			devel/py-azure-cli-feedback \
 			devel/py-azure-cli-network \
+			devel/py-azure-cli-nspkg \
 			devel/py-azure-cli-profile \
 			devel/py-azure-cli-resource \
 			devel/py-azure-cli-role \
