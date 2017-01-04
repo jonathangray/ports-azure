@@ -1,0 +1,25 @@
+@comment $OpenBSD$
+lib/python${MODPY_VERSION}/site-packages/azure/
+lib/python${MODPY_VERSION}/site-packages/azure/cli/
+lib/python${MODPY_VERSION}/site-packages/azure/cli/command_modules/
+lib/python${MODPY_VERSION}/site-packages/azure/cli/command_modules/configure/
+lib/python${MODPY_VERSION}/site-packages/azure/cli/command_modules/configure/__init__.py
+lib/python${MODPY_VERSION}/site-packages/azure/cli/command_modules/configure/__init__.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/cli/command_modules/configure/_consts.py
+lib/python${MODPY_VERSION}/site-packages/azure/cli/command_modules/configure/_consts.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/cli/command_modules/configure/_help.py
+lib/python${MODPY_VERSION}/site-packages/azure/cli/command_modules/configure/_help.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/cli/command_modules/configure/_utils.py
+lib/python${MODPY_VERSION}/site-packages/azure/cli/command_modules/configure/_utils.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/cli/command_modules/configure/commands.py
+lib/python${MODPY_VERSION}/site-packages/azure/cli/command_modules/configure/commands.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/cli/command_modules/configure/custom.py
+lib/python${MODPY_VERSION}/site-packages/azure/cli/command_modules/configure/custom.pyc
+lib/python${MODPY_VERSION}/site-packages/azure_cli_configure-${MODPY_EGG_VERSION}-py${MODPY_VERSION}-nspkg.pth
+lib/python${MODPY_VERSION}/site-packages/azure_cli_configure-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/
+lib/python${MODPY_VERSION}/site-packages/azure_cli_configure-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/PKG-INFO
+lib/python${MODPY_VERSION}/site-packages/azure_cli_configure-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/SOURCES.txt
+lib/python${MODPY_VERSION}/site-packages/azure_cli_configure-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/dependency_links.txt
+lib/python${MODPY_VERSION}/site-packages/azure_cli_configure-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/namespace_packages.txt
+lib/python${MODPY_VERSION}/site-packages/azure_cli_configure-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/requires.txt
+lib/python${MODPY_VERSION}/site-packages/azure_cli_configure-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/top_level.txt

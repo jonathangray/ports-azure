@@ -1,0 +1,23 @@
+@comment $OpenBSD$
+lib/python${MODPY_VERSION}/site-packages/azure/cli/command_modules/
+lib/python${MODPY_VERSION}/site-packages/azure/cli/command_modules/role/
+lib/python${MODPY_VERSION}/site-packages/azure/cli/command_modules/role/__init__.py
+lib/python${MODPY_VERSION}/site-packages/azure/cli/command_modules/role/__init__.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/cli/command_modules/role/_client_factory.py
+lib/python${MODPY_VERSION}/site-packages/azure/cli/command_modules/role/_client_factory.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/cli/command_modules/role/_help.py
+lib/python${MODPY_VERSION}/site-packages/azure/cli/command_modules/role/_help.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/cli/command_modules/role/_params.py
+lib/python${MODPY_VERSION}/site-packages/azure/cli/command_modules/role/_params.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/cli/command_modules/role/commands.py
+lib/python${MODPY_VERSION}/site-packages/azure/cli/command_modules/role/commands.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/cli/command_modules/role/custom.py
+lib/python${MODPY_VERSION}/site-packages/azure/cli/command_modules/role/custom.pyc
+lib/python${MODPY_VERSION}/site-packages/azure_cli_role-${MODPY_EGG_VERSION}-py${MODPY_VERSION}-nspkg.pth
+lib/python${MODPY_VERSION}/site-packages/azure_cli_role-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/
+lib/python${MODPY_VERSION}/site-packages/azure_cli_role-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/PKG-INFO
+lib/python${MODPY_VERSION}/site-packages/azure_cli_role-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/SOURCES.txt
+lib/python${MODPY_VERSION}/site-packages/azure_cli_role-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/dependency_links.txt
+lib/python${MODPY_VERSION}/site-packages/azure_cli_role-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/namespace_packages.txt
+lib/python${MODPY_VERSION}/site-packages/azure_cli_role-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/requires.txt
+lib/python${MODPY_VERSION}/site-packages/azure_cli_role-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/top_level.txt

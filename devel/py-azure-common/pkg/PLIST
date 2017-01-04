@@ -1,0 +1,15 @@
+@comment $OpenBSD$
+lib/python${MODPY_VERSION}/site-packages/azure/common/
+lib/python${MODPY_VERSION}/site-packages/azure/common/__init__.py
+lib/python${MODPY_VERSION}/site-packages/azure/common/__init__.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/common/credentials.py
+lib/python${MODPY_VERSION}/site-packages/azure/common/credentials.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/common/exceptions.py
+lib/python${MODPY_VERSION}/site-packages/azure/common/exceptions.pyc
+lib/python${MODPY_VERSION}/site-packages/azure_common-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/
+lib/python${MODPY_VERSION}/site-packages/azure_common-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/PKG-INFO
+lib/python${MODPY_VERSION}/site-packages/azure_common-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/SOURCES.txt
+lib/python${MODPY_VERSION}/site-packages/azure_common-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/dependency_links.txt
+lib/python${MODPY_VERSION}/site-packages/azure_common-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/not-zip-safe
+lib/python${MODPY_VERSION}/site-packages/azure_common-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/requires.txt
+lib/python${MODPY_VERSION}/site-packages/azure_common-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/top_level.txt
