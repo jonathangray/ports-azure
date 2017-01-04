@@ -2,7 +2,7 @@
 
 COMMENT=	Pure python SSH tunnels
 
-MODPY_EGG_VERSION=	0.1.1
+MODPY_EGG_VERSION=	0.1.2
 DISTNAME=		sshtunnel-${MODPY_EGG_VERSION}
 PKGNAME=		py-sshtunnel-${MODPY_EGG_VERSION}
 
