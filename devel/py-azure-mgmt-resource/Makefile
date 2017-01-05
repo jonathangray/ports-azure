@@ -19,11 +19,7 @@ MODULES=		lang/python
 MODPY_PI=		Yes
 MODPY_SETUPTOOLS=	Yes
 
-RUN_DEPENDS=		devel/py-azure-mgmt-nspkg \
-			devel/py-azure-common
-
-BUILD_DEPENDS=		devel/py-azure-nspkg \
-			devel/py-azure-mgmt-nspkg
+BUILD_DEPENDS=		sysutils/azure-sdk
 
 post-patch:
 	ln -s ${MODPY_SITEPKG}/azure/__init__.py ${WRKSRC}/azure/

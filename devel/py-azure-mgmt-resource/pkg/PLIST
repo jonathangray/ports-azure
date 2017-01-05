@@ -1,4 +1,6 @@
 @comment $OpenBSD$
+lib/python${MODPY_VERSION}/site-packages/azure/
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/resource/
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/resource/__init__.py
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/resource/__init__.pyc
