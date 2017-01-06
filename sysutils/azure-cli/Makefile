@@ -13,7 +13,8 @@ CATEGORIES=	sysutils
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes
 
-MODULES=	lang/python
+MODULES=		lang/python
+MODPY_SETUPUTILS=	Yes
 
 RUN_DEPENDS=	devel/py-adal \
 		devel/py-argcomplete \
@@ -85,15 +86,19 @@ do-install:
 	cd ${WRKSRC}/src/${PYMOD} ; \
 	pax -rw -pa \
 	    `find . -name '*.py' '!' '(' -path './setup.py' ')' -print` \
-	    ${WRKINST}${MODPY_SITEPKG}
+	    ${WRKINST}${MODPY_SITEPKG} ; \
+	${MODPY_BIN} ./${MODPY_SETUP} ${MODPY_DISTUTILS_INSTALL}
 .endfor
 .for CMOD in ${CMODS}
 	cd ${WRKSRC}/src/command_modules/${CMOD} ; \
 	pax -rw -pa \
 	    `find . -name '*.py' '!' '(' -path './setup.py' ')' -print` \
-	    ${WRKINST}${MODPY_SITEPKG}
+	    ${WRKINST}${MODPY_SITEPKG} ; \
+	${MODPY_BIN} ./${MODPY_SETUP} ${MODPY_DISTUTILS_INSTALL}
 .endfor
+	rm -f ${PREFIX}/bin/az{,.bat,.completion.sh}
 	${INSTALL_SCRIPT} ${WRKSRC}/src/azure-cli/az ${PREFIX}/bin/az
 	${MODPY_BIN} ${MODPY_LIBDIR}/compileall.py ${WRKINST}${MODPY_SITEPKG}
+	rm -f ${WRKINST}${MODPY_SITEPKG}/azure/__init__.{py,pyc}
 
 .include <bsd.port.mk>
