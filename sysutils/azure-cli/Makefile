@@ -13,26 +13,42 @@ CATEGORIES=	sysutils
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes
 
-MODULES=		lang/python
+MODULES=	lang/python
 
-RUN_DEPENDS=		sysutils/azure-sdk
+RUN_DEPENDS=	devel/py-adal \
+		devel/py-argcomplete \
+		devel/py-colorama \
+		devel/py-enum34 \
+		devel/py-jmespath \
+		devel/py-msrest \
+		devel/py-msrestazure \
+		devel/py-pip \
+		devel/py-six \
+		textproc/py-pygments \
+		textproc/py-tabulate \
+		textproc/py-yaml \
+		www/py-requests
 
+RUN_DEPENDS+=\
+		devel/py-azure-batch \
+		devel/py-azure-common \
+		devel/py-azure-graphrbac \
+		devel/py-azure-mgmt \
+		devel/py-azure-mgmt-authorization \
+		devel/py-azure-mgmt-compute \
+		devel/py-azure-mgmt-containerregistry \
+		devel/py-azure-mgmt-dns \
+		devel/py-azure-mgmt-network \
+		devel/py-azure-mgmt-nspkg \
+		devel/py-azure-mgmt-resource \
+		devel/py-azure-mgmt-storage \
+		devel/py-azure-mgmt-trafficmanager \
+		devel/py-azure-mgmt-web \
+		devel/py-azure-nspkg \
+		devel/py-azure-servicebus \
+		devel/py-azure-servicemanagement-legacy \
+		devel/py-azure-storage
 
-RUN_DEPENDS=		devel/py-adal \
-			devel/py-argcomplete \
-			devel/py-azure-mgmt-resource \
-			devel/py-colorama \
-			devel/py-enum34 \
-			devel/py-jmespath \
-			devel/py-msrest \
-			devel/py-msrestazure \
-			devel/py-pip \
-			devel/py-six \
-			sysutils/azure-sdk \
-			textproc/py-pygments \
-			textproc/py-tabulate \
-			textproc/py-yaml \
-			www/py-requests
 # applicationinsights
 
 do-build:
