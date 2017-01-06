@@ -18,8 +18,6 @@ MODULES=		lang/python
 MODPY_PI=		Yes
 MODPY_SETUPTOOLS=	Yes
 
-#RUN_DEPENDS=		devel/py-azure-cli-core
-
 RUN_DEPENDS=		devel/py-dateutil \
 			security/py-cryptography \
 			www/py-jwt \

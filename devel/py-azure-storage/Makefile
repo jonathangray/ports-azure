@@ -19,6 +19,4 @@ MODULES=		lang/python
 MODPY_PI=		Yes
 MODPY_SETUPTOOLS=	Yes
 
-#RUN_DEPENDS=		devel/py-azure-cli-core
-
 .include <bsd.port.mk>
