@@ -16,4 +16,7 @@ MODULES=		lang/python
 MODPY_PI=		Yes
 MODPY_SETUPTOOLS=	Yes
 
+RUN_DEPENDS=		security/py-oauthlib \
+			www/py-requests
+
 .include <bsd.port.mk>
