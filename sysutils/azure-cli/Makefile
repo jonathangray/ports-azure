@@ -25,6 +25,9 @@ RUN_DEPENDS=	devel/py-adal \
 		devel/py-msrestazure \
 		devel/py-pip \
 		devel/py-six \
+		security/py-paramiko \
+		security/py-scp \
+		security/py-sshtunnel \
 		shells/bash \
 		textproc/py-pygments \
 		textproc/py-tabulate \
