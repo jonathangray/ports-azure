@@ -22,7 +22,7 @@ RUN_DEPENDS=	devel/py-adal \
 		devel/py-enum34 \
 		devel/py-jmespath \
 		devel/py-msrest \
-		devel/py-msrestazure \
+		devel/py-msrestazure>=0.4.7 \
 		devel/py-pip \
 		devel/py-six \
 		security/py-openssl \
