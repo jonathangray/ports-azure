@@ -2,10 +2,10 @@
 
 COMMENT=	command line interface for Azure
 
-V=		0.1.0b11
+V=		0.1.2rc1
 GH_ACCOUNT=	Azure
 GH_PROJECT=	azure-cli
-GH_TAGNAME=	all-v${V}
+GH_TAGNAME=	azure-cli-${V}
 PKGNAME=	${GH_PROJECT}-${V}
 
 CATEGORIES=	sysutils
@@ -25,6 +25,7 @@ RUN_DEPENDS=	devel/py-adal \
 		devel/py-msrestazure \
 		devel/py-pip \
 		devel/py-six \
+		security/py-openssl \
 		security/py-paramiko \
 		security/py-scp \
 		security/py-sshtunnel \
@@ -35,24 +36,30 @@ RUN_DEPENDS=	devel/py-adal \
 		www/py-requests
 
 RUN_DEPENDS+=\
-		devel/py-azure-batch \
+		devel/py-azure-batch>=1.1.0 \
 		devel/py-azure-common \
-		devel/py-azure-graphrbac \
+		devel/py-azure-graphrbac>=0.30.0rc6 \
 		devel/py-azure-mgmt \
-		devel/py-azure-mgmt-authorization \
-		devel/py-azure-mgmt-compute \
-		devel/py-azure-mgmt-containerregistry \
-		devel/py-azure-mgmt-dns \
-		devel/py-azure-mgmt-network \
+		devel/py-azure-mgmt-authorization>=0.30.0rc6 \
+		devel/py-azure-mgmt-batch>=2.0.0 \
+		devel/py-azure-mgmt-compute>=0.33.0 \
+		devel/py-azure-mgmt-containerregistry>=0.1.1 \
+		devel/py-azure-mgmt-dns>=1.0.0 \
+		devel/py-azure-mgmt-documentdb>=0.1.0 \
+		devel/py-azure-mgmt-iothub>=0.2.1 \
+		devel/py-azure-mgmt-keyvault>=0.30.0 \
+		devel/py-azure-mgmt-network>=0.30.0 \
 		devel/py-azure-mgmt-nspkg \
-		devel/py-azure-mgmt-resource \
-		devel/py-azure-mgmt-storage \
-		devel/py-azure-mgmt-trafficmanager \
-		devel/py-azure-mgmt-web \
+		devel/py-azure-mgmt-redis>=1.0.0 \
+		devel/py-azure-mgmt-resource>=0.30.2 \
+		devel/py-azure-mgmt-sql>=0.2.0 \
+		devel/py-azure-mgmt-storage>=0.31.0 \
+		devel/py-azure-mgmt-trafficmanager>=0.30.0rc6 \
+		devel/py-azure-mgmt-web>=0.31.0 \
 		devel/py-azure-nspkg \
 		devel/py-azure-servicebus \
 		devel/py-azure-servicemanagement-legacy \
-		devel/py-azure-storage
+		devel/py-azure-storage>=0.33.0
 
 # applicationinsights
 
@@ -63,26 +70,31 @@ post-extract:
 	sed -i -e "s,^python,${MODPY_BIN}," ${WRKSRC}/src/azure-cli/az
 
 PYMODS=\
-		azure-cli \
-		azure-cli-core \
-		azure-cli-nspkg
+	azure-cli \
+	azure-cli-core \
+	azure-cli-nspkg
 CMODS=\
-		azure-cli-acr \
-		azure-cli-acs \
-		azure-cli-appservice \
-		azure-cli-cloud \
-		azure-cli-component \
-		azure-cli-configure \
-		azure-cli-container \
-		azure-cli-context \
-		azure-cli-feedback \
-		azure-cli-network \
-		azure-cli-profile \
-		azure-cli-resource \
-		azure-cli-role \
-		azure-cli-storage \
-		azure-cli-taskhelp \
-		azure-cli-vm
+	azure-cli-acr \
+	azure-cli-acs \
+	azure-cli-appservice \
+	azure-cli-batch \
+	azure-cli-cloud \
+	azure-cli-component \
+	azure-cli-configure \
+	azure-cli-container \
+	azure-cli-documentdb \
+	azure-cli-feedback \
+	azure-cli-iot \
+	azure-cli-keyvault \
+	azure-cli-network \
+	azure-cli-profile \
+	azure-cli-redis \
+	azure-cli-resource \
+	azure-cli-role \
+	azure-cli-sql \
+	azure-cli-storage \
+	azure-cli-taskhelp \
+	azure-cli-vm
 
 do-install:
 	${INSTALL_DATA_DIR} ${WRKINST}${MODPY_SITEPKG}

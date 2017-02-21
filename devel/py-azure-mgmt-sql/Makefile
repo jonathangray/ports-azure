@@ -1,10 +1,10 @@
 # $OpenBSD$
 
-COMMENT=	Azure Storage Resource Management Client Library
+COMMENT=	Azure SQL Management Client Library for Python
 
-MODPY_EGG_VERSION=	0.31.0
-DISTNAME=		azure-mgmt-storage-${MODPY_EGG_VERSION}
-PKGNAME=		py-azure-mgmt-storage-${MODPY_EGG_VERSION}
+MODPY_EGG_VERSION=	0.2.0
+DISTNAME=		azure-mgmt-sql-${MODPY_EGG_VERSION}
+PKGNAME=		py-azure-mgmt-sql-${MODPY_EGG_VERSION}
 EXTRACT_SUFX=		.zip
 
 HOMEPAGE=		https://github.com/Azure/azure-sdk-for-python
@@ -19,8 +19,8 @@ MODULES=		lang/python
 MODPY_PI=		Yes
 MODPY_SETUPTOOLS=	Yes
 
-RUN_DEPENDS=		devel/py-azure-mgmt-nspkg \
-			devel/py-azure-common
+RUN_DEPENDS=		devel/py-azure-common \
+			devel/py-azure-mgmt-nspkg
 
 BUILD_DEPENDS=		devel/py-azure-nspkg \
 			devel/py-azure-mgmt-nspkg

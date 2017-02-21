@@ -2,7 +2,7 @@
 
 COMMENT=	Azure Web Apps Resource Management Client Library
 
-MODPY_EGG_VERSION=	0.30.1
+MODPY_EGG_VERSION=	0.31.0
 DISTNAME=		azure-mgmt-web-${MODPY_EGG_VERSION}
 PKGNAME=		py-azure-mgmt-web-${MODPY_EGG_VERSION}
 EXTRACT_SUFX=		.zip

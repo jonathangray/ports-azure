@@ -1,0 +1,53 @@
+@comment $OpenBSD$
+@comment lib/python${MODPY_VERSION}/site-packages/azure/__init__.py
+@comment lib/python${MODPY_VERSION}/site-packages/azure/__init__.pyc
+@comment lib/python${MODPY_VERSION}/site-packages/azure/mgmt/__init__.py
+@comment lib/python${MODPY_VERSION}/site-packages/azure/mgmt/__init__.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/__init__.py
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/__init__.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/document_db.py
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/document_db.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/models/
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/models/__init__.py
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/models/__init__.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/models/consistency_policy.py
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/models/consistency_policy.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/models/database_account.py
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/models/database_account.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/models/database_account_create_update_parameters.py
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/models/database_account_create_update_parameters.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/models/database_account_list_keys_result.py
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/models/database_account_list_keys_result.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/models/database_account_list_read_only_keys_result.py
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/models/database_account_list_read_only_keys_result.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/models/database_account_paged.py
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/models/database_account_paged.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/models/database_account_patch_parameters.py
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/models/database_account_patch_parameters.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/models/database_account_regenerate_key_parameters.py
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/models/database_account_regenerate_key_parameters.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/models/document_db_enums.py
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/models/document_db_enums.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/models/failover_policies.py
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/models/failover_policies.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/models/failover_policy.py
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/models/failover_policy.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/models/location.py
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/models/location.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/models/resource.py
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/models/resource.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/operations/
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/operations/__init__.py
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/operations/__init__.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/operations/database_accounts_operations.py
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/operations/database_accounts_operations.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/version.py
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/version.pyc
+lib/python${MODPY_VERSION}/site-packages/azure_mgmt_documentdb-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/
+lib/python${MODPY_VERSION}/site-packages/azure_mgmt_documentdb-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/PKG-INFO
+lib/python${MODPY_VERSION}/site-packages/azure_mgmt_documentdb-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/SOURCES.txt
+lib/python${MODPY_VERSION}/site-packages/azure_mgmt_documentdb-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/dependency_links.txt
+lib/python${MODPY_VERSION}/site-packages/azure_mgmt_documentdb-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/not-zip-safe
+lib/python${MODPY_VERSION}/site-packages/azure_mgmt_documentdb-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/requires.txt
+lib/python${MODPY_VERSION}/site-packages/azure_mgmt_documentdb-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/top_level.txt

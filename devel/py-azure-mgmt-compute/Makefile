@@ -2,7 +2,7 @@
 
 COMMENT=	Azure Compute Resource Management Client Library for Python
 
-MODPY_EGG_VERSION=	0.32.1
+MODPY_EGG_VERSION=	0.33.0
 DISTNAME=		azure-mgmt-compute-${MODPY_EGG_VERSION}
 PKGNAME=		py-azure-mgmt-compute-${MODPY_EGG_VERSION}
 EXTRACT_SUFX=		.zip
@@ -19,7 +19,16 @@ MODULES=		lang/python
 MODPY_PI=		Yes
 MODPY_SETUPTOOLS=	Yes
 
-RUN_DEPENDS=		devel/py-azure-mgmt-nspkg \
-			devel/py-azure-common
+RUN_DEPENDS=		devel/py-azure-common \
+			devel/py-azure-mgmt-nspkg
+
+BUILD_DEPENDS=		devel/py-azure-nspkg \
+			devel/py-azure-mgmt-nspkg
+
+post-patch:
+	ln -s ${MODPY_SITEPKG}/azure/__init__.py ${WRKSRC}/azure/
+	ln -s ${MODPY_SITEPKG}/azure/__init__.pyc ${WRKSRC}/azure/
+	ln -s ${MODPY_SITEPKG}/azure/mgmt/__init__.py ${WRKSRC}/azure/mgmt/
+	ln -s ${MODPY_SITEPKG}/azure/mgmt/__init__.pyc ${WRKSRC}/azure/mgmt/
 
 .include <bsd.port.mk>
