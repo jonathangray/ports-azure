@@ -2,10 +2,11 @@
 
 COMMENT=	command line interface for Azure
 
-V=		0.1.2rc1
+V=		2.0.0
 GH_ACCOUNT=	Azure
 GH_PROJECT=	azure-cli
-GH_TAGNAME=	azure-cli-${V}
+GH_COMMIT=	6cd5d7c924b9674b4729cd8316aad1ce72b052d3
+DISTNAME=	azure-cli-all-20170228
 PKGNAME=	${GH_PROJECT}-${V}
 
 CATEGORIES=	sysutils
@@ -61,7 +62,12 @@ RUN_DEPENDS+=\
 		devel/py-azure-servicemanagement-legacy \
 		devel/py-azure-storage>=0.33.0
 
-# applicationinsights
+# 	for tests
+# py-applicationinsights
+# py-nose
+# py-mock
+# pylint
+# vcrpy
 
 do-build:
 
