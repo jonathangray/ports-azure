@@ -2,7 +2,7 @@
 
 COMMENT=	Azure Compute Resource Management Client Library for Python
 
-MODPY_EGG_VERSION=	0.33.0
+MODPY_EGG_VERSION=	0.33.1rc1
 DISTNAME=		azure-mgmt-compute-${MODPY_EGG_VERSION}
 PKGNAME=		py-azure-mgmt-compute-${MODPY_EGG_VERSION}
 EXTRACT_SUFX=		.zip
