@@ -1,0 +1,12 @@
+#!/bin/sh
+#
+# $OpenBSD$
+
+daemon="${TRUEPREFIX}/sbin/waagent -start"
+
+. /etc/rc.d/rc.subr
+
+pexp=".*python.* ${TRUEPREFIX}/sbin/waagent -daemon"
+rc_reload=NO
+
+rc_cmd $1
