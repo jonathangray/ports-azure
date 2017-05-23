@@ -1,0 +1,99 @@
+Index: Makefile
+===================================================================
+RCS file: /cvs/ports/devel/py-argcomplete/Makefile,v
+retrieving revision 1.7
+diff -u -p -r1.7 Makefile
+--- Makefile	3 Jan 2017 19:19:48 -0000	1.7
++++ Makefile	8 Mar 2017 01:13:23 -0000
+@@ -2,11 +2,10 @@
+ 
+ COMMENT =	bash tab completion for argparse
+ 
+-MODPY_EGG_VERSION =	1.4.1
++MODPY_EGG_VERSION =	1.8.2
+ DISTNAME =	argcomplete-${MODPY_EGG_VERSION}
+ PKGNAME =	py-${DISTNAME}
+ CATEGORIES =	devel
+-REVISION =	0
+ 
+ # GPLv3+
+ PERMIT_PACKAGE_CDROM=	Yes
+@@ -19,12 +18,20 @@ MODPY_SETUPTOOLS =	Yes
+ FLAVORS =		python3
+ FLAVOR ?=
+ 
++TEST_DEPENDS =	devel/py-coverage${MODPY_FLAVOR} \
++		devel/py-pexpect${MODPY_FLAVOR} \
++		devel/py-wheel${MODPY_FLAVOR} \
++		shells/bash \
++		shells/tcsh
++
+ post-install:
+ 	for i in ${PREFIX}/bin/*; do \
+ 		mv $${i} $${i}${MODPY_BIN_SUFFIX} ;\
+ 	done
+ 
+-do-test:
+-	cd ${WRKSRC}/test && ${MODPY_BIN} test.py
++pre-test:
++	@ln -fs ${MODPY_BIN} ${WRKDIR}/bin/python
++	@[[ -r /dev/ptyz0 ]] || (printf "\\nWARNING: tests are likely to fail\
++		unless additional ptys are available.\\n\\n" >&2; sleep 2)
+ 
+ .include <bsd.port.mk>
+Index: distinfo
+===================================================================
+RCS file: /cvs/ports/devel/py-argcomplete/distinfo,v
+retrieving revision 1.3
+diff -u -p -r1.3 distinfo
+--- distinfo	28 Aug 2016 10:55:38 -0000	1.3
++++ distinfo	8 Mar 2017 01:13:23 -0000
+@@ -1,2 +1,2 @@
+-SHA256 (argcomplete-1.4.1.tar.gz) = p7X6jRrLaeSbPGs/YiW8cJCS4Mf2ITEbrFB6T27+YJ0=
+-SIZE (argcomplete-1.4.1.tar.gz) = 37219
++SHA256 (argcomplete-1.8.2.tar.gz) = eizN4HTrZjEjKy+R+NjVmF1b6/DjawkREwluOgOFVGs=
++SIZE (argcomplete-1.8.2.tar.gz) = 53626
+Index: patches/patch-setup_py
+===================================================================
+RCS file: patches/patch-setup_py
+diff -N patches/patch-setup_py
+--- /dev/null	1 Jan 1970 00:00:00 -0000
++++ patches/patch-setup_py	8 Mar 2017 01:13:23 -0000
+@@ -0,0 +1,12 @@
++$OpenBSD$
++--- setup.py.orig	Tue Mar  7 19:55:42 2017
+++++ setup.py	Tue Mar  7 19:55:53 2017
++@@ -4,7 +4,7 @@ import glob
++ from setuptools import setup, find_packages
++ 
++ install_requires = []
++-tests_require = ["coverage", "flake8", "pexpect", "wheel"]
+++tests_require = ["coverage", "pexpect", "wheel"]
++ 
++ try:
++     import argparse  # noqa
+Index: pkg/PLIST
+===================================================================
+RCS file: /cvs/ports/devel/py-argcomplete/pkg/PLIST,v
+retrieving revision 1.2
+diff -u -p -r1.2 PLIST
+--- pkg/PLIST	28 Aug 2016 10:55:38 -0000	1.2
++++ pkg/PLIST	8 Mar 2017 01:13:23 -0000
+@@ -1,6 +1,7 @@
+ @comment $OpenBSD: PLIST,v 1.2 2016/08/28 10:55:38 danj Exp $
+ bin/activate-global-python-argcomplete${MODPY_BIN_SUFFIX}
+ bin/python-argcomplete-check-easy-install-script${MODPY_BIN_SUFFIX}
++bin/python-argcomplete-tcsh${MODPY_BIN_SUFFIX}
+ bin/register-python-argcomplete${MODPY_BIN_SUFFIX}
+ lib/python${MODPY_VERSION}/site-packages/argcomplete/
+ lib/python${MODPY_VERSION}/site-packages/argcomplete-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/
+@@ -8,6 +9,7 @@ lib/python${MODPY_VERSION}/site-packages
+ lib/python${MODPY_VERSION}/site-packages/argcomplete-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/SOURCES.txt
+ lib/python${MODPY_VERSION}/site-packages/argcomplete-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/dependency_links.txt
+ lib/python${MODPY_VERSION}/site-packages/argcomplete-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/not-zip-safe
++lib/python${MODPY_VERSION}/site-packages/argcomplete-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/requires.txt
+ lib/python${MODPY_VERSION}/site-packages/argcomplete-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/top_level.txt
+ lib/python${MODPY_VERSION}/site-packages/argcomplete/__init__.py
+ ${MODPY_COMMENT}lib/python${MODPY_VERSION}/site-packages/argcomplete/${MODPY_PYCACHE}/
+
+
