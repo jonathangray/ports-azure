@@ -3,6 +3,7 @@
 COMMENT=	command line interface for Azure
 
 V=		2.0.0
+REVISION=	0
 GH_ACCOUNT=	Azure
 GH_PROJECT=	azure-cli
 GH_COMMIT=	6cd5d7c924b9674b4729cd8316aad1ce72b052d3
@@ -22,6 +23,7 @@ RUN_DEPENDS=	devel/py-adal \
 		devel/py-argcomplete \
 		devel/py-colorama \
 		devel/py-enum34 \
+		devel/py-futures \
 		devel/py-jmespath \
 		devel/py-msrest \
 		devel/py-msrestazure>=0.4.7 \
