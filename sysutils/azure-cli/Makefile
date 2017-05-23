@@ -17,6 +17,7 @@ PERMIT_PACKAGE_CDROM=	Yes
 MODULES=		lang/python
 MODPY_SETUPUTILS=	Yes
 
+BUILD_DEPENDS=	devel/py-setuptools${MODPY_FLAVOR}
 RUN_DEPENDS=	devel/py-adal \
 		devel/py-argcomplete \
 		devel/py-colorama \
