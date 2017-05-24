@@ -1,8 +1,4 @@
 @comment $OpenBSD$
-@comment lib/python${MODPY_VERSION}/site-packages/azure/__init__.py
-@comment lib/python${MODPY_VERSION}/site-packages/azure/__init__.pyc
-@comment lib/python${MODPY_VERSION}/site-packages/azure/mgmt/__init__.py
-@comment lib/python${MODPY_VERSION}/site-packages/azure/mgmt/__init__.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/__init__.py
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/__init__.pyc
@@ -13,20 +9,26 @@ lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/export_rdb_para
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/export_rdb_parameters.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/import_rdb_parameters.py
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/import_rdb_parameters.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/operation.py
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/operation.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/operation_display.py
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/operation_display.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/operation_paged.py
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/operation_paged.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/redis_access_keys.py
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/redis_access_keys.pyc
-lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/redis_create_or_update_parameters.py
-lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/redis_create_or_update_parameters.pyc
-lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/redis_list_keys_result.py
-lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/redis_list_keys_result.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/redis_create_parameters.py
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/redis_create_parameters.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/redis_firewall_rule.py
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/redis_firewall_rule.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/redis_firewall_rule_paged.py
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/redis_firewall_rule_paged.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/redis_force_reboot_response.py
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/redis_force_reboot_response.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/redis_management_client_enums.py
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/redis_management_client_enums.pyc
-lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/redis_patch_schedules_request.py
-lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/redis_patch_schedules_request.pyc
-lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/redis_patch_schedules_response.py
-lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/redis_patch_schedules_response.pyc
-lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/redis_properties.py
-lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/redis_properties.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/redis_patch_schedule.py
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/redis_patch_schedule.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/redis_reboot_parameters.py
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/redis_reboot_parameters.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/redis_regenerate_key_parameters.py
@@ -35,8 +37,8 @@ lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/redis_resource.
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/redis_resource.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/redis_resource_paged.py
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/redis_resource_paged.pyc
-lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/redis_resource_with_access_key.py
-lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/redis_resource_with_access_key.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/redis_update_parameters.py
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/redis_update_parameters.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/resource.py
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/resource.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/schedule_entry.py
@@ -46,8 +48,14 @@ lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/models/sku.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/operations/
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/operations/__init__.py
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/operations/__init__.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/operations/firewall_rules_operations.py
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/operations/firewall_rules_operations.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/operations/operations.py
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/operations/operations.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/operations/patch_schedules_operations.py
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/operations/patch_schedules_operations.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/operations/redis_firewall_rule_operations.py
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/operations/redis_firewall_rule_operations.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/operations/redis_operations.py
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/operations/redis_operations.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/redis/redis_management_client.py

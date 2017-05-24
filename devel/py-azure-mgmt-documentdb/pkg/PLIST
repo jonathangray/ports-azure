@@ -1,8 +1,4 @@
 @comment $OpenBSD$
-@comment lib/python${MODPY_VERSION}/site-packages/azure/__init__.py
-@comment lib/python${MODPY_VERSION}/site-packages/azure/__init__.pyc
-@comment lib/python${MODPY_VERSION}/site-packages/azure/mgmt/__init__.py
-@comment lib/python${MODPY_VERSION}/site-packages/azure/mgmt/__init__.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/__init__.py
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/__init__.pyc
@@ -15,8 +11,12 @@ lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/models/consistenc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/models/consistency_policy.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/models/database_account.py
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/models/database_account.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/models/database_account_connection_string.py
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/models/database_account_connection_string.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/models/database_account_create_update_parameters.py
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/models/database_account_create_update_parameters.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/models/database_account_list_connection_strings_result.py
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/models/database_account_list_connection_strings_result.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/models/database_account_list_keys_result.py
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/models/database_account_list_keys_result.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/documentdb/models/database_account_list_read_only_keys_result.py

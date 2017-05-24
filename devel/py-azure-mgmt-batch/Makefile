@@ -2,7 +2,7 @@
 
 COMMENT=	Azure Batch Management Client Library for Python
 
-MODPY_EGG_VERSION=	2.0.0
+MODPY_EGG_VERSION=	4.0.0
 DISTNAME=		azure-mgmt-batch-${MODPY_EGG_VERSION}
 PKGNAME=		py-azure-mgmt-batch-${MODPY_EGG_VERSION}
 EXTRACT_SUFX=		.zip
@@ -24,11 +24,5 @@ RUN_DEPENDS=		devel/py-azure-common \
 
 BUILD_DEPENDS=		devel/py-azure-nspkg \
 			devel/py-azure-mgmt-nspkg
-
-post-patch:
-	ln -s ${MODPY_SITEPKG}/azure/__init__.py ${WRKSRC}/azure/
-	ln -s ${MODPY_SITEPKG}/azure/__init__.pyc ${WRKSRC}/azure/
-	ln -s ${MODPY_SITEPKG}/azure/mgmt/__init__.py ${WRKSRC}/azure/mgmt/
-	ln -s ${MODPY_SITEPKG}/azure/mgmt/__init__.pyc ${WRKSRC}/azure/mgmt/
 
 .include <bsd.port.mk>

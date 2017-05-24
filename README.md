@@ -29,5 +29,5 @@ devel/py-azure-nspkg            azure/__init__.py
 devel/py-azure-mgmt-nspkg       azure/mgmt/__init__.py
 ```
 
-The latest py-azure-mgmt-resource 0.31.0 is not compatible 0.30.2 must
-be used as 0.30.2 removes a file used by py-azure-cli-resource.
+py-azure-keyvault >= 0.3.x is not compatible with azure-cli and 0.2.x needs
+to be used for now.

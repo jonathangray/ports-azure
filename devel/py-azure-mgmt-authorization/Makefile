@@ -2,7 +2,7 @@
 
 COMMENT=	Azure Authorization Resource Management Client Library
 
-MODPY_EGG_VERSION=	0.30.0rc6
+MODPY_EGG_VERSION=	0.30.0
 DISTNAME=		azure-mgmt-authorization-${MODPY_EGG_VERSION}
 PKGNAME=		py-azure-mgmt-authorization-${MODPY_EGG_VERSION}
 EXTRACT_SUFX=		.zip

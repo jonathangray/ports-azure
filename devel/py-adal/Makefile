@@ -2,7 +2,7 @@
 
 COMMENT=	Azure Active Directory Library
 
-MODPY_EGG_VERSION=	0.4.3
+MODPY_EGG_VERSION=	0.4.5
 DISTNAME=		adal-${MODPY_EGG_VERSION}
 PKGNAME=		py-adal-${MODPY_EGG_VERSION}
 

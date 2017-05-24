@@ -2,12 +2,11 @@
 
 COMMENT=	command line interface for Azure
 
-V=		2.0.0
-REVISION=	0
+V=		2.0.6
 GH_ACCOUNT=	Azure
 GH_PROJECT=	azure-cli
-GH_COMMIT=	6cd5d7c924b9674b4729cd8316aad1ce72b052d3
-DISTNAME=	azure-cli-all-20170228
+GH_COMMIT=	0b59a2973a7bdc09df7fb7cbe42c25d66ac784f0
+DISTNAME=	azure-cli-all-20170509
 PKGNAME=	${GH_PROJECT}-${V}
 
 CATEGORIES=	sysutils
@@ -28,6 +27,7 @@ RUN_DEPENDS=	devel/py-adal \
 		devel/py-msrest \
 		devel/py-msrestazure>=0.4.7 \
 		devel/py-pip \
+		devel/py-prompt_toolkit \
 		devel/py-six \
 		security/py-openssl \
 		security/py-paramiko \
@@ -38,6 +38,9 @@ RUN_DEPENDS=	devel/py-adal \
 		textproc/py-tabulate \
 		textproc/py-yaml \
 		www/py-requests
+
+# pydocumentdb
+# whoosh
 
 RUN_DEPENDS+=\
 		devel/py-azure-batch>=1.1.0 \
@@ -87,19 +90,28 @@ CMODS=\
 	azure-cli-acs \
 	azure-cli-appservice \
 	azure-cli-batch \
+	azure-cli-cdn \
 	azure-cli-cloud \
+	azure-cli-cognitiveservices \
 	azure-cli-component \
 	azure-cli-configure \
-	azure-cli-container \
-	azure-cli-documentdb \
+	azure-cli-cosmosdb \
+	azure-cli-dla \
+	azure-cli-dls \
 	azure-cli-feedback \
+	azure-cli-find \
+	azure-cli-interactive \
 	azure-cli-iot \
 	azure-cli-keyvault \
+	azure-cli-lab \
+	azure-cli-monitor \
 	azure-cli-network \
 	azure-cli-profile \
+	azure-cli-rdbms \
 	azure-cli-redis \
 	azure-cli-resource \
 	azure-cli-role \
+	azure-cli-sf \
 	azure-cli-sql \
 	azure-cli-storage \
 	azure-cli-taskhelp \

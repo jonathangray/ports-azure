@@ -2,7 +2,7 @@
 
 COMMENT=	Azure Service Bus Client Library for Python
 
-MODPY_EGG_VERSION=	0.21.0
+MODPY_EGG_VERSION=	0.21.1
 DISTNAME=		azure-servicebus-${MODPY_EGG_VERSION}
 PKGNAME=		py-azure-servicebus-${MODPY_EGG_VERSION}
 EXTRACT_SUFX=		.zip

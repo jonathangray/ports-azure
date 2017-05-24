@@ -2,7 +2,7 @@
 
 COMMENT=	Azure Graph RBAC Resource Management Client Library
 
-MODPY_EGG_VERSION=	0.30.0rc6
+MODPY_EGG_VERSION=	0.30.0
 DISTNAME=		azure-graphrbac-${MODPY_EGG_VERSION}
 PKGNAME=		py-azure-graphrbac-${MODPY_EGG_VERSION}
 EXTRACT_SUFX=		.zip

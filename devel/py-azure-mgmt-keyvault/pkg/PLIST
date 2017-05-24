@@ -1,8 +1,4 @@
 @comment $OpenBSD$
-@comment lib/python${MODPY_VERSION}/site-packages/azure/__init__.py
-@comment lib/python${MODPY_VERSION}/site-packages/azure/__init__.pyc
-@comment lib/python${MODPY_VERSION}/site-packages/azure/mgmt/__init__.py
-@comment lib/python${MODPY_VERSION}/site-packages/azure/mgmt/__init__.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/keyvault/
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/keyvault/__init__.py
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/keyvault/__init__.pyc
@@ -19,6 +15,8 @@ lib/python${MODPY_VERSION}/site-packages/azure/mgmt/keyvault/models/permissions.
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/keyvault/models/permissions.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/keyvault/models/resource.py
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/keyvault/models/resource.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/keyvault/models/resource_paged.py
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/keyvault/models/resource_paged.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/keyvault/models/sku.py
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/keyvault/models/sku.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/keyvault/models/vault.py

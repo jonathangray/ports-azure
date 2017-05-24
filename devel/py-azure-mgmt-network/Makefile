@@ -2,7 +2,7 @@
 
 COMMENT=	Azure Network Resource Management Client Library
 
-MODPY_EGG_VERSION=	0.30.0
+MODPY_EGG_VERSION=	1.0.0
 DISTNAME=		azure-mgmt-network-${MODPY_EGG_VERSION}
 PKGNAME=		py-azure-mgmt-network-${MODPY_EGG_VERSION}
 EXTRACT_SUFX=		.zip

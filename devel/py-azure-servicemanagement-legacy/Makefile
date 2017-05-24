@@ -2,7 +2,7 @@
 
 COMMENT=	Azure Legacy Service Management Client Library for Python
 
-MODPY_EGG_VERSION=	0.20.5
+MODPY_EGG_VERSION=	0.20.6
 DISTNAME=		azure-servicemanagement-legacy-${MODPY_EGG_VERSION}
 PKGNAME=		py-azure-servicemanagement-legacy-${MODPY_EGG_VERSION}
 EXTRACT_SUFX=		.zip

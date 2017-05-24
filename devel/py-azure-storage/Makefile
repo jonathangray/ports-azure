@@ -2,7 +2,7 @@
 
 COMMENT=	Azure Storage Client Library
 
-MODPY_EGG_VERSION=	0.33.0
+MODPY_EGG_VERSION=	0.34.2
 DISTNAME=		azure-storage-${MODPY_EGG_VERSION}
 PKGNAME=		py-azure-storage-${MODPY_EGG_VERSION}
 EXTRACT_SUFX=		.zip

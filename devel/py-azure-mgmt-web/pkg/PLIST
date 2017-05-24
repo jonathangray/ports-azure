@@ -1,8 +1,4 @@
 @comment $OpenBSD$
-@comment lib/python${MODPY_VERSION}/site-packages/azure/__init__.py
-@comment lib/python${MODPY_VERSION}/site-packages/azure/__init__.pyc
-@comment lib/python${MODPY_VERSION}/site-packages/azure/mgmt/__init__.py
-@comment lib/python${MODPY_VERSION}/site-packages/azure/mgmt/__init__.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/__init__.py
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/__init__.pyc
@@ -21,12 +17,16 @@ lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/app_service_certi
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/app_service_certificate_order.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/app_service_certificate_order_paged.py
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/app_service_certificate_order_paged.pyc
-lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/app_service_certificate_paged.py
-lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/app_service_certificate_paged.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/app_service_certificate_resource.py
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/app_service_certificate_resource.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/app_service_certificate_resource_paged.py
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/app_service_certificate_resource_paged.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/app_service_environment.py
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/app_service_environment.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/app_service_environment_paged.py
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/app_service_environment_paged.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/app_service_environment_resource.py
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/app_service_environment_resource.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/app_service_plan.py
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/app_service_plan.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/app_service_plan_paged.py
@@ -91,10 +91,6 @@ lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/csm_usage_quota.p
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/csm_usage_quota.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/csm_usage_quota_paged.py
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/csm_usage_quota_paged.pyc
-lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/csr.py
-lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/csr.pyc
-lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/csr_paged.py
-lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/csr_paged.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/custom_hostname_analysis_result.py
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/custom_hostname_analysis_result.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/database_backup_setting.py
@@ -177,6 +173,8 @@ lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/metric_definition
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/metric_definition.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/migrate_my_sql_request.py
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/migrate_my_sql_request.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/migrate_my_sql_status.py
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/migrate_my_sql_status.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/name_identifier.py
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/name_identifier.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/name_identifier_paged.py
@@ -223,6 +221,8 @@ lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/requests_based_tr
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/requests_based_trigger.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/resource.py
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/resource.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/resource_health_metadata.py
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/resource_health_metadata.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/resource_metric.py
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/resource_metric.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/resource_metric_availability.py
@@ -257,6 +257,10 @@ lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/site_cloneability
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/site_cloneability_criterion.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/site_config.py
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/site_config.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/site_config_resource.py
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/site_config_resource.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/site_config_resource_paged.py
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/site_config_resource_paged.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/site_configuration_snapshot_info.py
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/site_configuration_snapshot_info.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/site_instance.py
@@ -363,8 +367,10 @@ lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/web_site_manageme
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/web_site_management_client_enums.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/worker_pool.py
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/worker_pool.pyc
-lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/worker_pool_paged.py
-lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/worker_pool_paged.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/worker_pool_resource.py
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/worker_pool_resource.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/worker_pool_resource_paged.py
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/models/worker_pool_resource_paged.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/operations/
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/operations/__init__.py
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/operations/__init__.pyc
@@ -380,6 +386,8 @@ lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/operations/deleted_web_a
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/operations/deleted_web_apps_operations.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/operations/domains_operations.py
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/operations/domains_operations.pyc
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/operations/provider_operations.py
+lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/operations/provider_operations.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/operations/recommendations_operations.py
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/operations/recommendations_operations.pyc
 lib/python${MODPY_VERSION}/site-packages/azure/mgmt/web/operations/top_level_domains_operations.py

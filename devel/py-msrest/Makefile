@@ -2,7 +2,7 @@
 
 COMMENT=	AutoRest swagger generator Python client runtime
 
-MODPY_EGG_VERSION=	0.4.4
+MODPY_EGG_VERSION=	0.4.8
 DISTNAME=		msrest-${MODPY_EGG_VERSION}
 PKGNAME=		py-msrest-${MODPY_EGG_VERSION}
 EXTRACT_SUFX=		.zip

@@ -2,7 +2,7 @@
 
 COMMENT=	Azure DocumentDB Management Client Library for Python
 
-MODPY_EGG_VERSION=	0.1.0
+MODPY_EGG_VERSION=	0.1.3
 DISTNAME=		azure-mgmt-documentdb-${MODPY_EGG_VERSION}
 PKGNAME=		py-azure-mgmt-documentdb-${MODPY_EGG_VERSION}
 EXTRACT_SUFX=		.zip
@@ -24,11 +24,5 @@ RUN_DEPENDS=		devel/py-azure-common \
 
 BUILD_DEPENDS=		devel/py-azure-nspkg \
 			devel/py-azure-mgmt-nspkg
-
-post-patch:
-	ln -s ${MODPY_SITEPKG}/azure/__init__.py ${WRKSRC}/azure/
-	ln -s ${MODPY_SITEPKG}/azure/__init__.pyc ${WRKSRC}/azure/
-	ln -s ${MODPY_SITEPKG}/azure/mgmt/__init__.py ${WRKSRC}/azure/mgmt/
-	ln -s ${MODPY_SITEPKG}/azure/mgmt/__init__.pyc ${WRKSRC}/azure/mgmt/
 
 .include <bsd.port.mk>

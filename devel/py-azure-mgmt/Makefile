@@ -2,7 +2,7 @@
 
 COMMENT=	Azure Resource Management Client Libraries
 
-MODPY_EGG_VERSION=	0.30.0rc6
+MODPY_EGG_VERSION=	1.0.0
 DISTNAME=		azure-mgmt-${MODPY_EGG_VERSION}
 PKGNAME=		py-azure-mgmt-${MODPY_EGG_VERSION}
 EXTRACT_SUFX=		.zip

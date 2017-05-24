@@ -2,7 +2,7 @@
 
 COMMENT=	Azure Client Libraries for Python
 
-MODPY_EGG_VERSION=	2.0.0rc6
+MODPY_EGG_VERSION=	2.0.0
 DISTNAME=		azure-${MODPY_EGG_VERSION}
 PKGNAME=		py-azure-${MODPY_EGG_VERSION}
 EXTRACT_SUFX=		.zip
