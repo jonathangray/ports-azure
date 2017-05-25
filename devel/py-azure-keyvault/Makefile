@@ -19,8 +19,7 @@ MODULES=		lang/python
 MODPY_PI=		Yes
 MODPY_SETUPTOOLS=	Yes
 
-RUN_DEPENDS=		devel/py-azure-common
-
-BUILD_DEPENDS=		devel/py-azure-nspkg
+RUN_DEPENDS=		sysutils/azure-sdk
+BUILD_DEPENDS=		sysutils/azure-sdk
 
 .include <bsd.port.mk>

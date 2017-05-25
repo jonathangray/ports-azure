@@ -43,30 +43,9 @@ RUN_DEPENDS=	devel/py-adal \
 # whoosh
 
 RUN_DEPENDS+=\
-		devel/py-azure-batch>=1.1.0 \
-		devel/py-azure-common \
-		devel/py-azure-graphrbac>=0.30.0rc6 \
-		devel/py-azure-mgmt \
-		devel/py-azure-mgmt-authorization>=0.30.0rc6 \
-		devel/py-azure-mgmt-batch>=2.0.0 \
-		devel/py-azure-mgmt-compute>=0.33.0 \
-		devel/py-azure-mgmt-containerregistry>=0.1.1 \
-		devel/py-azure-mgmt-dns>=1.0.0 \
-		devel/py-azure-mgmt-documentdb>=0.1.0 \
-		devel/py-azure-mgmt-iothub>=0.2.1 \
-		devel/py-azure-mgmt-keyvault>=0.30.0 \
-		devel/py-azure-mgmt-network>=0.30.0 \
-		devel/py-azure-mgmt-nspkg \
-		devel/py-azure-mgmt-redis>=1.0.0 \
-		devel/py-azure-mgmt-resource>=0.30.2 \
-		devel/py-azure-mgmt-sql>=0.2.0 \
-		devel/py-azure-mgmt-storage>=0.31.0 \
-		devel/py-azure-mgmt-trafficmanager>=0.30.0rc6 \
-		devel/py-azure-mgmt-web>=0.31.0 \
+		sysutils/azure-sdk \
+		devel/py-azure-keyvault \
 		devel/py-azure-multiapi-storage \
-		devel/py-azure-nspkg \
-		devel/py-azure-servicebus \
-		devel/py-azure-servicemanagement-legacy \
 		devel/py-azure-storage>=0.33.0
 
 # 	for tests
