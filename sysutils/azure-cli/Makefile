@@ -63,6 +63,7 @@ RUN_DEPENDS+=\
 		devel/py-azure-mgmt-storage>=0.31.0 \
 		devel/py-azure-mgmt-trafficmanager>=0.30.0rc6 \
 		devel/py-azure-mgmt-web>=0.31.0 \
+		devel/py-azure-multiapi-storage \
 		devel/py-azure-nspkg \
 		devel/py-azure-servicebus \
 		devel/py-azure-servicemanagement-legacy \

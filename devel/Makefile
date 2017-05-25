@@ -23,6 +23,7 @@
      SUBDIR += py-azure-mgmt-storage
      SUBDIR += py-azure-mgmt-trafficmanager
      SUBDIR += py-azure-mgmt-web
+     SUBDIR += py-azure-multiapi-storage
      SUBDIR += py-azure-nspkg
      SUBDIR += py-azure-servicebus
      SUBDIR += py-azure-servicemanagement-legacy
