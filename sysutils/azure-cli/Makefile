@@ -29,6 +29,7 @@ RUN_DEPENDS=	devel/py-adal \
 		devel/py-pip \
 		devel/py-prompt_toolkit \
 		devel/py-six \
+		devel/py-vsts-cd-manager \
 		security/py-openssl \
 		security/py-paramiko \
 		security/py-scp \
@@ -36,6 +37,7 @@ RUN_DEPENDS=	devel/py-adal \
 		shells/bash \
 		textproc/py-pygments \
 		textproc/py-tabulate \
+		textproc/py-whoosh \
 		textproc/py-yaml \
 		www/py-requests
 
