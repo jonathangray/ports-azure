@@ -17,6 +17,7 @@ PERMIT_PACKAGE_CDROM=	Yes
 MODULES=		lang/python
 MODPY_SETUPTOOLS=	Yes
 
-RUN_DEPENDS=	devel/py-azure-storage
+RUN_DEPENDS=	devel/py-azure-storage \
+		devel/py-azure-datalake-store
 
 .include <bsd.port.mk>

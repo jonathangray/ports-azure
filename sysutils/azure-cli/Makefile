@@ -44,6 +44,7 @@ RUN_DEPENDS=	devel/py-adal \
 
 RUN_DEPENDS+=\
 		sysutils/azure-sdk \
+		devel/py-azure-datalake-store \
 		devel/py-azure-keyvault \
 		devel/py-azure-multiapi-storage \
 		devel/py-azure-storage>=0.33.0
