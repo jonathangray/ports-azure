@@ -2,11 +2,11 @@
 
 COMMENT=		Microsoft Azure Linux Agent
 
-V=			2.2.11
-GH_ACCOUNT=		reyk
+V=			2.2.12
+GH_ACCOUNT=		Azure
 GH_PROJECT=		WALinuxAgent
-GH_COMMIT=		213d53cf6478adc063d8f0eb9f1a8bdf60ea1043
-DISTNAME=		waagent-all-20170513
+GH_COMMIT=		ed7a7b788869102ce8398259ce7f756cbc43a868
+DISTNAME=		waagent-all-20170531
 PKGNAME=		waagent-${V}
 
 CATEGORIES=		sysutils
@@ -17,13 +17,11 @@ PERMIT_PACKAGE_CDROM=	Yes
 MODULES=		lang/python
 MODPY_SETUPTOOLS=	Yes
 
+MODPY_ADJ_FILES=	bin/waagent
+
 RUN_DEPENDS=		security/openssl
 
 NO_TEST=		Yes
-
-post-extract:
-	sed -i -e "s,^#!/usr/bin/env python,#!${MODPY_BIN}," \
-		${WRKSRC}/bin/waagent
 
 post-install:
 	rm -f ${WRKINST}/${PREFIX}/lib/\
