@@ -2,11 +2,10 @@
 
 COMMENT=		Microsoft Azure Linux Agent
 
-V=			2.2.12
+V=			2.2.13
 GH_ACCOUNT=		Azure
 GH_PROJECT=		WALinuxAgent
-GH_COMMIT=		ed7a7b788869102ce8398259ce7f756cbc43a868
-DISTNAME=		waagent-all-20170531
+GH_TAGNAME=		v${V}
 PKGNAME=		waagent-${V}
 
 CATEGORIES=		sysutils
