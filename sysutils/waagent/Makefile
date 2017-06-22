@@ -3,6 +3,7 @@
 COMMENT=		Microsoft Azure Linux Agent
 
 V=			2.2.13
+REVISION=		0
 GH_ACCOUNT=		Azure
 GH_PROJECT=		WALinuxAgent
 GH_TAGNAME=		v${V}

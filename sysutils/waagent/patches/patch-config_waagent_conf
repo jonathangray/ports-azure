@@ -1,0 +1,17 @@
+$OpenBSD$
+
+disable extensions by default
+
+Index: config/waagent.conf
+--- config/waagent.conf.orig
++++ config/waagent.conf
+@@ -85,6 +85,9 @@ OS.SshDir=/etc/ssh
+ #
+ # Pid.File=/var/run/waagent.pid
+ 
++# Enable or disable extensions, default is enabled
++Extension.Enabled=n
++
+ #
+ # Extension.LogDir=/var/log/azure
+ 
