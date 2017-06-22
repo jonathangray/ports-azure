@@ -1,6 +1,6 @@
 $OpenBSD$
 
-disable extensions by default
+from https://github.com/reyk/WALinuxAgent/commit/b9afe9fb4e0e6b984856c56811c41f44625b410f.patch
 
 Index: config/waagent.conf
 --- config/waagent.conf.orig
@@ -10,7 +10,7 @@ Index: config/waagent.conf
  # Pid.File=/var/run/waagent.pid
  
 +# Enable or disable extensions, default is enabled
-+Extension.Enabled=n
++# Extension.Enabled=y
 +
  #
  # Extension.LogDir=/var/log/azure
