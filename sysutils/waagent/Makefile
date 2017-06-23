@@ -3,7 +3,6 @@
 COMMENT=		Microsoft Azure Linux Agent
 
 V=			2.2.13
-REVISION=		1
 GH_ACCOUNT=		Azure
 GH_PROJECT=		WALinuxAgent
 GH_TAGNAME=		v${V}
@@ -19,9 +18,13 @@ MODPY_SETUPTOOLS=	Yes
 
 MODPY_ADJ_FILES=	bin/waagent
 
+# LibreSSL has removed CMS support
 RUN_DEPENDS=		security/openssl
 
 NO_TEST=		Yes
+
+pre-configure:
+	${SUBST_CMD} ${WRKSRC}/azurelinuxagent/common/osutil/openbsd.py
 
 post-install:
 	rm -f ${WRKINST}/${PREFIX}/lib/\

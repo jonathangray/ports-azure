@@ -247,5 +247,5 @@ lib/python${MODPY_VERSION}/site-packages/tests/utils/test_text_util.pyc
 sbin/waagent
 share/examples/waagent/
 share/examples/waagent/waagent.conf
-@sample /etc/waagent.conf
+@sample ${SYSCONFDIR}/waagent.conf
 @rcscript ${RCDIR}/waagent
