@@ -92,10 +92,13 @@ doas (dcasati@puffy.dcvlab.home) password:
 You can now make the port.
 
 ```
-$ doas make                                                                                         doas (dcasati@puffy.dcvlab.home) password:                                                          ===> azure-vhd-utils-20170104 depends on: go-=1.9 -> go-1.9
+$ doas make                                                                                         
+doas (dcasati@puffy.dcvlab.home) password:                                                          
+===> azure-vhd-utils-20170104 depends on: go-=1.9 -> go-1.9
 ===>  Verifying specs:  c pthread                            
 ===>  found c.90.0 pthread.24.0        
-===>  Checking files for azure-vhd-utils-20170104                                                   `/usr/ports/distfiles/azure-vhd-utils-20170104-2dd43d88.tar.gz' is up to date.
+===>  Checking files for azure-vhd-utils-20170104                                                   
+`/usr/ports/distfiles/azure-vhd-utils-20170104-2dd43d88.tar.gz' is up to date.
 >> (SHA256) azure-vhd-utils-20170104-2dd43d88.tar.gz: OK     
 ===>  Extracting for azure-vhd-utils-20170104                                                       
 ===>  Patching for azure-vhd-utils-20170104                                             
@@ -110,6 +113,9 @@ $ doas make                                                                     
 
 $
 ```
+
+## Notes
+
 There seems to be some kind of strange packaging error on microsoft's part
 as python modules can sometimes not be found at build time with
 
