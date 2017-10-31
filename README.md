@@ -1,8 +1,17 @@
+
+#  azure-cli and other utils for OpenBSD
+
+This repo contains the essential files needed to operate Microsoft Azure from OpenBSD (e.g.: azure-cli). 
+This toolset also allows the creation of OpenBSD VMs that can later be imported to Azure using the scripts under
+[reyk/cloud-openbsd](https://github.com/reyk/cloud-openbsd). 
+
+## References
+
 [Command-line tools for Azure on GitHub](https://github.com/Azure/azure-cli)
 
 [Usage documentation](https://docs.microsoft.com/en-us/cli/azure/)
 
-## Prequisites
+## Prerequisites
 
 * shell access to OpenBSD 6.1
 * The following packages installed: git, python, qemu
